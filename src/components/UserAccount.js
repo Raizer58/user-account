@@ -68,7 +68,7 @@ export default () => {
   const submitHandlerSearchForm = useCallback((event) => {
     event.preventDefault();
     setViewSearch(true);
-  }, [viewSearch]);
+  }, []);
 
   const handlerButtonEdit = useCallback((userIdentificator) => {
     setContactEditing(true);

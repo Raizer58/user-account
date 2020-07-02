@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useSelector } from 'react-redux';
 import {
   BrowserRouter as Router, Switch, Route, Redirect,
@@ -9,7 +9,6 @@ import Login from './components/Login';
 
 const App = () => {
   const logged = useSelector((store) => store.user);
-  console.log(logged);
 
   return (
     <Router>
