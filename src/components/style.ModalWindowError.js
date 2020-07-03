@@ -1,0 +1,23 @@
+import style from 'styled-components';
+
+export default style.div`
+  position: fixed;
+  top: 37.5vh;
+  left: 25vw;
+  height: 25vh;
+  width: 50vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.9); 
+  z-index: 10;
+  border: black solid 3px;
+  border-radius: 25px;
+  padding-top: 5vh;
+
+  p{
+    width: 100%;
+    text-align: center;
+  }
+`;
