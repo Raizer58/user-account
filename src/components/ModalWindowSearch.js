@@ -34,7 +34,7 @@ const ModalWindowSearch = ({ handlerClick, dataSearch }) => {
       </p>
       <button
         type="button"
-        onClick={() => handlerClick()}
+        onClick={handlerClick}
       >
         Close contact
       </button>

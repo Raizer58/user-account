@@ -1,4 +1,4 @@
-const loginUser = (user) => {
+const loginUser = (user, openError) => {
   const url = 'https://afternoon-falls-25894.herokuapp.com/signin';
   const rawResponse = fetch(url, {
     method: 'POST',
@@ -14,12 +14,9 @@ const loginUser = (user) => {
       if (request.status !== 200) {
         throw new Error('Incorrect e-mail or password');
       }
-
       return request.json();
     })
-    .then(({ userId }) => {
-      return userId;
-    });
+    .then(({ userId }) => userId);
 };
 
 export default loginUser;
