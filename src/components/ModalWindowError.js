@@ -6,6 +6,9 @@ import StyleModalWindowError from './style.ModalWindowError';
 const ModalWindowError = ({ error, closeError }) => (
   <StyleModalWindowError>
     <p>{error}</p>
+    <p>Попробуйте:</p>
+    <p>Логин - hello@user.com</p>
+    <p>Пароль - Gfhjkm_123</p>
     <button type="button" onClick={closeError}>
         Close error
     </button>
