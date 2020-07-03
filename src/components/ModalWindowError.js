@@ -3,16 +3,14 @@ import PropTypes from 'prop-types';
 
 import StyleModalWindowError from './style.ModalWindowError';
 
-const ModalWindowError = ({ error, closeError }) => {
-  return (
-    <StyleModalWindowError>
-      <p>{error}</p>
-      <button type="button" onClick={closeError}>
+const ModalWindowError = ({ error, closeError }) => (
+  <StyleModalWindowError>
+    <p>{error}</p>
+    <button type="button" onClick={closeError}>
         Close error
-      </button>
-    </StyleModalWindowError>
-  );
-};
+    </button>
+  </StyleModalWindowError>
+);
 
 ModalWindowError.propTypes = {
   closeError: PropTypes.func.isRequired,
