@@ -2,9 +2,9 @@ import style from 'styled-components';
 
 export default style.div`
   position: fixed;
-  top: 37.5vh;
+  top: 35vh;
   left: 25vw;
-  height: 25vh;
+  height: 30vh;
   width: 50vw;
   display: flex;
   flex-wrap: wrap;
@@ -14,10 +14,12 @@ export default style.div`
   z-index: 10;
   border: black solid 3px;
   border-radius: 25px;
-  padding-top: 5vh;
+  padding: 3vh 0vh;
 
   p{
     width: 100%;
     text-align: center;
+    margin-top: 0%;
+    margin-bottom: 5%;
   }
 `;
