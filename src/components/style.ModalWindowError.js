@@ -14,12 +14,12 @@ export default style.div`
   z-index: 10;
   border: black solid 3px;
   border-radius: 25px;
-  padding: 3vh 0vh;
+  padding: 5vh 0vh;
 
-  p{
+  p {
     width: 100%;
     text-align: center;
     margin-top: 0%;
-    margin-bottom: 5%;
+    margin-bottom: 3%;
   }
 `;
